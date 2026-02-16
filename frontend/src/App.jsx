@@ -6,6 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import EmployeeDashboard from "./pages/employee/EmployeeDashboard";
 import MyAttendance from "./pages/employee/MyAttendance";
 import Profile from "./pages/employee/Profile";
+
 import ManagerDashboard from "./pages/manager/ManagerDashboard";
 import AllAttendance from "./pages/manager/AllAttendance";
 import Reports from "./pages/manager/Reports";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
+        
         <Route
           path="/employee/dashboard"
           element={
@@ -64,6 +66,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Reports />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
             </ProtectedRoute>
           }
         />
