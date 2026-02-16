@@ -1,3 +1,11 @@
+## Candidate Details
+
+- **Name:** Karthi Natarajan  
+- **College:** Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College  
+- **contact:** skarthinatarajan21@gmail.com  
+
+-----------------------------------------------------------------------------------------
+
 # Attendance Tracking System
 
 A modern, full-stack attendance management system with role-based access control (Employee & Manager). Built with React, Node.js/Express, and MongoDB.
