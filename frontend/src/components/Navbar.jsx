@@ -36,9 +36,12 @@ function Navbar({ role }) {
               <Link to="/manager/dashboard" className="nav-link">
                 Dashboard
               </Link>
-              <Link to="/manager/all-attendance" className="nav-link">
+
+              {/* ✅ FIXED HERE */}
+              <Link to="/manager/attendance" className="nav-link">
                 All Attendance
               </Link>
+
               <Link to="/manager/reports" className="nav-link">
                 Reports
               </Link>
