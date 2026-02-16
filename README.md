@@ -2,7 +2,8 @@
 
 - **Name:** Karthi Natarajan  
 - **College:** Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College  
-- **contact:** skarthinatarajan21@gmail.com  
+- **contact:** skarthinatarajan21@gmail.com
+- **project preview url:** https://employee-attendance-system-mu-eight.vercel.app/ 
 
 -----------------------------------------------------------------------------------------
 
