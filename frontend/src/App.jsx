@@ -1,12 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+// Employee pages
 import EmployeeDashboard from "./pages/employee/EmployeeDashboard";
 import MyAttendance from "./pages/employee/MyAttendance";
 import Profile from "./pages/employee/Profile";
 
+// Manager pages
 import ManagerDashboard from "./pages/manager/ManagerDashboard";
 import AllAttendance from "./pages/manager/AllAttendance";
 import Reports from "./pages/manager/Reports";
@@ -15,11 +18,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Auth */}
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        
+        {/* Employee */}
         <Route
           path="/employee/dashboard"
           element={
@@ -45,6 +49,7 @@ function App() {
           }
         />
 
+        {/* Manager */}
         <Route
           path="/manager/dashboard"
           element={
@@ -54,7 +59,7 @@ function App() {
           }
         />
         <Route
-          path="/manager/all-attendance"
+          path="/manager/attendance"
           element={
             <ProtectedRoute>
               <AllAttendance />
@@ -69,9 +74,8 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
-          path="/profile"
+          path="/manager/profile"
           element={
             <ProtectedRoute>
               <Profile />

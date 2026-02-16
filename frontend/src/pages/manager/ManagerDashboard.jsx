@@ -22,7 +22,7 @@ function ManagerDashboard() {
         setData(dashboardRes.data);
       } catch (err) {
         console.error(err);
-        setError("Failed to load manager dashboard");
+        setError("Failed to load dashboard data");
       } finally {
         setLoading(false);
       }
@@ -72,15 +72,10 @@ function ManagerDashboard() {
           {/* Header */}
           <div className="dashboard-header">
             <div className="header-content">
-              <button className="btn-back" onClick={() => navigate(-1)}>
-                ← Back
-              </button>
-              <div>
-                <h1>Manager Dashboard</h1>
-                <p className="header-subtitle">
-                  Monitor team attendance and overview
-                </p>
-              </div>
+              <h1>Manager Dashboard</h1>
+              <p className="header-subtitle">
+                Monitor team attendance and overview
+              </p>
             </div>
           </div>
 
@@ -140,7 +135,7 @@ function ManagerDashboard() {
 
               <button
                 className="action-btn attendance-btn"
-                onClick={() => navigate("/manager/all-attendance")}
+                onClick={() => navigate("/manager/attendance")}
               >
                 <span className="action-icon">📋</span>
                 <span>Check Attendance</span>
@@ -148,7 +143,7 @@ function ManagerDashboard() {
 
               <button
                 className="action-btn profile-btn"
-                onClick={() => navigate("/profile")}
+                onClick={() => navigate("/manager/profile")}
               >
                 <span className="action-icon">👤</span>
                 <span>My Profile</span>
