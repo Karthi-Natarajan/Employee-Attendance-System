@@ -3,6 +3,7 @@
 - **Name:** Karthi Natarajan  
 - **College:** Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College  
 - **contact:** skarthinatarajan21@gmail.com
+- **Phone no:** 9360253194
 - **project preview url:** https://employee-attendance-system-blond.vercel.app/ 
 
 -----------------------------------------------------------------------------------------
